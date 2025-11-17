@@ -1,0 +1,187 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* Weather Card */
+.weather-box {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+.weather-box h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input and Button Group */
+.input-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-group button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+/* Weather Result */
+.weather-result {
+  padding: 1rem;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.weather-result h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input,
+  .input-group button {
+    width: 100%;
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 1s ease-in-out;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Sun / Moon */
+#skyObject {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
+}
+
+/* Main container */
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* Weather box */
+.weather-box {
+  background-color: #ffffffcc;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Input */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-group button {
+  padding: 0.6rem 1rem;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background: #0056b3;
+}
+
+/* Result */
+.weather-result {
+  padding: 1rem;
+  background: #f0f8ff;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  #skyObject {
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+}
+
