@@ -7,7 +7,7 @@ A simple and responsive Weather App built using HTML, CSS, and JavaScript. It sh
 # API Used
 Weather data provided by:
 👉 https://www.weatherapi.com/
-#Technology Stack
+# Technology Stack
 .HTML
 .CSS
 .Js
